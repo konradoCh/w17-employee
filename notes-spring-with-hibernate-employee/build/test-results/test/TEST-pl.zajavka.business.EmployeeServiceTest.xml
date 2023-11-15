@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.zajavka.business.EmployeeServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-15T17:44:43" hostname="DESKTOP-A9LUF2G" time="0.253">
+  <properties/>
+  <testcase name="firstTestForEmployeeFunctionality()" classname="pl.zajavka.business.EmployeeServiceTest" time="0.253"/>
+  <system-out><![CDATA[2023-11-15 18:44:35.717 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-11-15 18:44:35.751 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-11-15 18:44:36.268 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2023-11-15 18:44:36.269 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2023-11-15 18:44:36.289 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7877 MB
+2023-11-15 18:44:36.316 [Test worker] INFO  docker[testcontainers/ryuk:0.3.4] - Creating container for image: testcontainers/ryuk:0.3.4
+2023-11-15 18:44:36.551 [Test worker] INFO  o.t.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2023-11-15 18:44:36.737 [Test worker] INFO  docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 is starting: 13b753b8aae8e92a6c7fae9352fdf95d849c3f831edac60a2fb3ca5201a749ce
+2023-11-15 18:44:37.355 [Test worker] INFO  docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 started in PT1.0555517S
+2023-11-15 18:44:37.372 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-11-15 18:44:37.372 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2023-11-15 18:44:37.374 [Test worker] INFO  o.testcontainers.DockerClientFactory - âś”ď¸Ž Docker server version should be at least 1.6.0
+2023-11-15 18:44:37.375 [Test worker] INFO  docker[postgres:15.0] - Creating container for image: postgres:15.0
+2023-11-15 18:44:37.545 [Test worker] INFO  docker[postgres:15.0] - Container postgres:15.0 is starting: 78852e81cefdf1441465cf330b33e1a4d4e7458131aa2bc89bb53ee448486e8e
+2023-11-15 18:44:39.693 [Test worker] INFO  docker[postgres:15.0] - Container postgres:15.0 started in PT2.3186843S
+2023-11-15 18:44:39.798 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using ContextCustomizers: [org.springframework.test.context.support.DynamicPropertiesContextCustomizer@a51ec889]
+2023-11-15 18:44:39.827 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5633dafd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5d5160e6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2eadc9f6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2903c6ff, org.springframework.test.context.transaction.TransactionalTestExecutionListener@61af1510, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@37af1f93, org.springframework.test.context.event.EventPublishingTestExecutionListener@778d82e9]
+2023-11-15 18:44:40.101 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-15 18:44:40.174 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-11-15 18:44:40.386 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceJPAConfiguration' of type [pl.zajavka.infrastructure.configuration.PersistenceJPAConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-11-15 18:44:40.525 [Test worker] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.5.0 by Redgate
+2023-11-15 18:44:40.525 [Test worker] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.0
+2023-11-15 18:44:40.525 [Test worker] INFO  o.f.c.i.license.VersionPrinter - 
+2023-11-15 18:44:40.801 [Test worker] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:postgresql://localhost:55067/test (PostgreSQL 15.0)
+2023-11-15 18:44:40.819 [Test worker] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 15.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 14.
+2023-11-15 18:44:40.852 [Test worker] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.021s)
+2023-11-15 18:44:40.878 [Test worker] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ...
+2023-11-15 18:44:40.957 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >>
+2023-11-15 18:44:40.973 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1.0 - create employee table"
+2023-11-15 18:44:41.014 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1.1 - alter employee table add since column"
+2023-11-15 18:44:41.046 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - alter employee table add unique key"
+2023-11-15 18:44:41.071 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "public", now at version v2 (execution time 00:00.134s)
+2023-11-15 18:44:41.160 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-15 18:44:41.249 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.4.Final
+2023-11-15 18:44:41.453 [Test worker] WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-11-15 18:44:41.866 [Test worker] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-15 18:44:42.830 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-15 18:44:42.841 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    insert 
+    into
+        employee
+        (name, salary, since, surname) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        e1_0.employee_id,
+        e1_0.name,
+        e1_0.salary,
+        e1_0.since,
+        e1_0.surname 
+    from
+        employee e1_0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
